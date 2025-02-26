@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Adozioni Pet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🐶🐱 Adozioni Pet</div>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adozioni.html">Adozioni</a></li>
+            <li><a href="chi-siamo.html">Chi Siamo</a></li>
+            <li><a href="contatti.html" class="active">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Contattaci</h1>
+            <p>Scrivici per maggiori informazioni sulle adozioni.</p>
+        </header>
+
+        <section class="contact">
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Messaggio:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,252 @@
+/* STILE GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #857df2;
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #757dea;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2624c2;
+}
+
+/* MENU HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #9c95f9;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #a0a5ee;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list .active {
+    background: #3136c4;
+}
+
+/* MENU MOBILE */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: #3852b7;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: left;
+        border-radius: 8px;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        padding: 10px;
+        border-bottom: 1px solid #2845b8;
+    }
+}
+
+/* HEADER */
+.hero {
+    background: linear-gradient(135deg, #162974, #312fa7);
+    color: #2c3cba;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/* SEZIONE CHI SIAMO */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 900px;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-img {
+    width: 300px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.text-box {
+    max-width: 500px;
+}
+
+.text-box h2 {
+    color: #2a38a7;
+}
+
+/* BOTTONI */
+.btn {
+    background: #1f3db2;
+    color: #232b9a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #273db0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+}
+/* Sezione Adozioni */
+.pets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.pet {
+    background: #22409b;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgb(38, 60, 171, 0.1);
+    text-align: center;
+}
+
+.pet img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pet h2 {
+    color: #293da3;
+    margin-top: 10px;
+}
+
+.pet p {
+    font-size: 14px;
+    color: #243dbc;
+    margin: 10px 0;
+}
+
+/* Stile Bottoni */
+.btn {
+    display: inline-block;
+    background: #272b9b;
+    color: #2e47ad;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #213ba6;
+}
+/* Stile base */
+.nav-list {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #253aa2;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgb(24, 34, 170, 0.1);
+    border-radius: 5px;
+}
+
+/* Mostra il menu quando ha la classe 'active' */
+.nav-list.active {
+    display: flex;
+}
+
+/* Stile del menu per mobile */
+.menu-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    display: block;
+}
+
+/* Nasconde il menu su desktop */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        position: static;
+        background: none;
+        box-shadow: none;
+        width: auto;
+        flex-direction: row;
+    }
+}
+
